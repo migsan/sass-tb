@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+  },
+  "devDependencies": {
+    "node-sass": "^3.10.1",
+    "stylelint": "^7.5.0"
+  },
+  "scripts": {
+    "lint:css": "stylelint \"public/scss/**/*.scss\" --syntax scss",
+    "build:css": "npm run lint:css && node-sass --include-path src/site/scss src/site/scss/main.scss"
+  }
+}
