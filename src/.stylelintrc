@@ -1,0 +1,16 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "block-closing-brace-newline-after": [
+      "always", { "ignoreAtRules": ["if", "else"] }
+    ],
+    "at-rule-empty-line-before": [
+      "always", { "except": ["first-nested", "blockless-after-same-name-blockless"], ignore: ["after-comment"] }
+    ],
+    "selector-pseudo-element-colon-notation": "single",
+    "number-leading-zero": "never",
+    "number-no-trailing-zeros": true,
+    "max-empty-lines": 3,
+    "comment-whitespace-inside": null
+  }
+}
